@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RGa-SK-ygp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picker View Controller-->
+        <scene sceneID="SEr-yA-LtJ">
+            <objects>
+                <viewController id="RGa-SK-ygp" customClass="PickerViewController" customModule="PickerView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7rE-Oi-wn1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSG-ci-y1w">
+                                <rect key="frame" x="27.5" y="225.5" width="320" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="RGa-SK-ygp" id="bjp-Ga-YwR"/>
+                                    <outlet property="delegate" destination="RGa-SK-ygp" id="fvs-MX-KPB"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aSG-ci-y1w" firstAttribute="centerY" secondItem="7rE-Oi-wn1" secondAttribute="centerY" id="0K3-Sr-vlb"/>
+                            <constraint firstItem="aSG-ci-y1w" firstAttribute="centerX" secondItem="7rE-Oi-wn1" secondAttribute="centerX" id="uh7-sJ-eKC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Ux-b1-8OM"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="aSG-ci-y1w" id="hP9-Sd-hgV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUV-tr-qQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="29"/>
+        </scene>
+    </scenes>
+</document>
